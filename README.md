@@ -1,16 +1,82 @@
-# React + Vite
+# 🌌 NEURAL-TASK-STATION
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, **Glassmorphism-inspired** To-Do application built with React. This interface utilizes backdrop filters and neon accents to provide a futuristic "command center" feel for daily task management.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Glassmorphism UI:** Semi-transparent containers with high-end background blurs.
+- **Dynamic Task Management:** Real-time adding, deleting, and re-ordering of objectives.
+- **Responsive Control:** Optimized for both mouse and keyboard (`Enter` to deploy tasks).
+- **State Immutability:** Uses modern React `useState` hooks with proper array spread patterns for clean state transitions.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Library:** React.js (Hooks-based)
+- **Styling:** CSS3 (Custom Variables, Backdrop-filters, Flexbox)
+- **Theme:** Cybernetic Dark Mode
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+
+```text
+src/
+ ├── App.js            # Entry point & root container
+ ├── ToDoList.jsx      # Core logic and UI components
+ ├── App.css           # Futuristic styling & Neon themes
+ └── index.js          # React DOM rendering
+```
+
+## ⚙️ Installation & Setup
+
+To get your station online, follow these steps:
+
+1.  Clone the repository
+
+```bash
+git clone [https://github.com/your-username/neural-task-station.git](https://github.com/your-username/neural-task-station.git)
+```
+
+2. Navigate to the directory
+
+```bash
+cd neural-task-station
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Launch the interface
+
+```bash
+npm start
+```
+
+## 🧪 Core Logic Preview
+
+The application manages state using the useState hook, ensuring that the UI remains synced with the underlying data array.
+
+```bash
+// Example of the immutable swap logic used for re-ordering
+const moveTask = (index, direction) => {
+  const updatedTasks = [...tasks];
+  const targetIndex = index + direction;
+  [updatedTasks[index], updatedTasks[targetIndex]] = [updatedTasks[targetIndex], updatedTasks[index]];
+  setTasks(updatedTasks);
+};
+```
+
+## 🔮 Roadmap & Future Updates
+
+- [ ] Neural Persistence: Integrate localStorage to save tasks across sessions.
+
+- [ ] Motion Physics: Add Framer Motion for smooth sliding transitions.
+
+- [ ] Priority Levels: Assign color-coded urgency to different tasks.
+
+## Built with ⚡ by Dulan Dhanush
