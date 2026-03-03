@@ -71,6 +71,10 @@ const moveTask = (index, direction) => {
 };
 ```
 
+## UI
+
+![alt text](image.png)
+
 ## 🔮 Roadmap & Future Updates
 
 - [ ] Neural Persistence: Integrate localStorage to save tasks across sessions.
