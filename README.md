@@ -42,7 +42,7 @@ git clone [https://github.com/DulanDhanush/to-do-list-react-.git](https://github
 2. Navigate to the directory
 
 ```bash
-cd neural-task-station
+cd to-do-list-react-
 ```
 
 3. Install dependencies
