@@ -36,7 +36,7 @@ To get your station online, follow these steps:
 1.  Clone the repository
 
 ```bash
-git clone [https://github.com/DulanDhanush/to-do-list-react-.git](https://github.com/DulanDhanush/to-do-list-react-.git)
+git clone https://github.com/DulanDhanush/to-do-list-react-.git
 ```
 
 2. Navigate to the directory
